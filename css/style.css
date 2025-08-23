@@ -1,0 +1,191 @@
+body{
+    font-family: Montserrat, sans-serif !important;
+}
+
+.nav-link{
+    font-weight: 600;
+     color: #e3e3e3 !important;
+     font-size: 17px !important;
+}
+
+
+.nav-link:hover{
+ color: #fba21d !important;
+}
+
+.phone_number{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+
+dl, ol, ul{
+    margin-bottom: 0 !important;
+}
+
+.container{
+    max-width: 1200px !important;
+}
+
+.btn_order{
+    outline: none !important;
+    border: 1px solid #e3e3e3 !important;
+    padding: 10px 45px !important;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+    color: #e3e3e3 !important;
+}
+
+header{
+    margin-top: 20px;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+        
+        /* Шапка с прозрачным фоном */
+        .header {
+            padding: 15px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .nav-link {
+            color: #e3e3e3 !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+       
+        
+        /* Hero блок */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://leader-id.storage.yandexcloud.net/upload/572445/084ddccc-05e9-4d47-98db-3eff8574db26.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 270px 0 150px;
+            position: relative;
+            margin-top: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 3.6rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            width: 800px;
+
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+          
+        }
+        
+        .advantages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+
+        
+        .btn-hero {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            background-color: #ffc107;
+            border: none;
+            color: #333;
+            transition: all 0.3s;
+        }
+        
+        .btn-hero:hover {
+            background-color: #e0a800;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .btn_hero{
+            padding: 13px 40px !important;
+        }
+
+
+
+
+        /* Тарифы */
+        
+        .tarife_section h2{
+            font-size: 36px;
+            text-align: center;
+            font-weight: 700;
+        }
+         
+
+
+        .tarife_section{
+            margin-top: 80px;
+        }
+
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .header ul {
+                display: none !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .advantage-item {
+                width: 100%;
+            }
+            
+            .d-md-flex.me-3 {
+                display: none !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .phone_number {
+                font-size: 0.9rem;
+            }
+            
+            .btn_order {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
