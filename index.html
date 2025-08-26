@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Такси Тольятти</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 30px;">
+            <div class="d-flex  phone_header_wrapper">
+                <a href="tel:+79869531909" class="nav-link phone_number">+7 (986) 953-19-09</a>
+                 <a href="tel:+79869531909" class="nav-link phone_number">+7 (986) 953-19-09</a>
+            </div>
+
+            <div class="d-flex" style="gap: 15px">
+                <a href="#" class="social-icon">
+                    <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.4395" cy="19.4395" fill="#3E99D8" r="19.4395"></circle>
+                        <path d="M3.56917 -2.55497e-07L0 6.42978L7.5349 1.87535L3.56917 -2.55497e-07Z" fill="#E0E0E0" transform="translate(13.9704 24.6145)"></path>
+                        <path d="M20.8862 0.133954C20.754 0 20.4897 0 20.2253 0L0.396574 8.03723C0.132191 8.17118 0 8.43909 0 8.707C0 8.97491 0.132191 9.24282 0.396574 9.37677L17.5814 17.414C17.7136 17.414 17.7136 17.414 17.8458 17.414C17.978 17.414 18.1102 17.414 18.1102 17.28C18.2424 17.1461 18.3746 17.0121 18.5068 16.7442L21.1506 0.669769C21.1506 0.535815 21.1506 0.267908 20.8862 0.133954Z" fill="white" transform="translate(7.36069 10.9512)"></path>
+                        <path d="M13.8801 0L0 11.52V19.4233L3.70136 13.2614L13.8801 0Z" fill="#F2F2F2" transform="translate(13.9704 11.6208)"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.4395" cy="19.4395" fill="#49E670" r="19.4395"></circle>
+                        <path d="M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z" fill="#FAFAFA" transform="translate(12.9597 12.9597)"></path>
+                        <path d="M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z" fill="white" stroke="white" stroke-width="0.2" transform="translate(7.7758 7.77582)"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+          
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="/">
+                    <svg fill="#e3e3e3" height="60px" id="Layer_1" style="enable-background:new 0 0 122.88 114.93" version="1.1" viewBox="0 -3.97 122.88 122.88" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+                        <g>
+                            <path class="st0" d="M117.95,53.71v41.82v9.94v9.46h-14.31v-9.46h-84.4v9.46H4.93v-9.46v-9.94V53.71H0v-9.41h12.04l6.71-20.88 c1.98-6.15,5.28-11.74,11.74-11.74h14.78V3.4c0-3.71-0.77-3.39,2.72-3.39h27.33c2.92,0,2.29-0.28,2.29,2.83v8.83h17.28 c6.46,0,10.18,5.48,11.74,11.74l5.19,20.88h11.06v9.41H117.95L117.95,53.71z M40.01,86.58h42.27v9.97H40.01V86.58L40.01,86.58z M9.72,63.36c10.77,0.34,17.36,4.86,19.05,14.26H9.72V63.36L9.72,63.36z M111.8,63.36c-10.77,0.34-17.36,4.86-19.05,14.26h19.05 V63.36L111.8,63.36z M17.18,44.29h88.52l-3.79-17.51c-1.04-4.8-4.03-8.95-8.95-8.95H31.74c-4.92,0-7.44,4.26-8.95,8.95L17.18,44.29 L17.18,44.29z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="d-flex gap-3 d-none d-lg-flex">
+                <li><a href="" class="nav-link">Услуги</a></li>
+                <li><a href="" class="nav-link">Тарифы</a></li>
+                <li><a href="" class="nav-link">Контакты</a></li>
+                <li><a href="" class="nav-link">О нас</a></li>
+            </ul>
+           
+            <button class="btn btn_order btn_desctop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оставить заявку</button>
+            <button class="mobile-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <i class="bi bi-list"></i>
+                    </button>
+        </div>
+    </div>
+
+    
+</header>
+
+
+
+<!-- Offcanvas меню -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-nav">
+                <li><a href="#" data-bs-dismiss="offcanvas">Услуги</a></li>
+                <li><a href="#" data-bs-dismiss="offcanvas">Тарифы</a></li>
+                <li><a href="#" data-bs-dismiss="offcanvas">Контакты</a></li>
+                <li><a href="#" data-bs-dismiss="offcanvas">О нас</a></li>
+            </ul>
+            
+            <div class="offcanvas-contacts">
+                <a href="tel:+79869531909" class="d-block phone_number mb-2">+7 (986) 953-19-09</a>
+                <a href="tel:+79869531909" class="d-block phone_number mb-4">+7 (986) 953-19-09</a>
+                
+                <div class="d-flex" style="gap: 15px; margin-bottom: 20px;">
+                    <a href="#" class="social-icon">
+                        <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19.4395" cy="19.4395" fill="#3E99D8" r="19.4395"></circle>
+                            <path d="M3.56917 -2.55497e-07L0 6.42978L7.5349 1.87535L3.56917 -2.55497e-07Z" fill="#E0E0E0" transform="translate(13.9704 24.6145)"></path>
+                            <path d="M20.8862 0.133954C20.754 0 20.4897 0 20.2253 0L0.396574 8.03723C0.132191 8.17118 0 8.43909 0 8.707C0 8.97491 0.132191 9.24282 0.396574 9.37677L17.5814 17.414C17.7136 17.414 17.7136 17.414 17.8458 17.414C17.978 17.414 18.1102 17.414 18.1102 17.28C18.2424 17.1461 18.3746 17.0121 18.5068 16.7442L21.1506 0.669769C21.1506 0.535815 21.1506 0.267908 20.8862 0.133954Z" fill="white" transform="translate(7.36069 10.9512)"></path>
+                            <path d="M13.8801 0L0 11.52V19.4233L3.70136 13.2614L13.8801 0Z" fill="#F2F2F2" transform="translate(13.9704 11.6208)"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19.4395" cy="19.4395" fill="#49E670" r="19.4395"></circle>
+                            <path d="M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z" fill="#FAFAFA" transform="translate(12.9597 12.9597)"></path>
+                            <path d="M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z" fill="white" stroke="white" stroke-width="0.2" transform="translate(7.7758 7.77582)"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <button class="btn btn_order w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-dismiss="offcanvas">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Hero Block -->
+<section class="hero">
+    <div class="container">
+        <div class="row hero-content">
+            <div class="col-lg-7">
+                <h1 class="hero-title">Такси в Тольятти Быстро, надежно, комфортно</h1>
+                <p class="hero-subtitle">Официальный перевозчик "Такси Тольятти" предлагает пассажирские перевозки (такси) по городу Тольятти и по всей Самарской области по выгодным ценам. Работаем по направлениям как из Тольятти/в Тольятти.</p>
+                  <button class="btn btn_order btn_hero" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать такси прямо сейчас</button>
+             
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section">
+    <div class="container">
+         <h2>Наши тарифы</h2>
+         
+
+
+
+        
+ <div class="cards-container">
+        <!-- Карточка 1 -->
+        <div class="card" >
+            <img src="img/image 1.png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 17 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+
+         <div class="card" >
+            <img src="img/image 1 (1).png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                  <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 20 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card" >
+            <img src="img/image 1.png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 20 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card" >
+            <img src="img/image 1.png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 25 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+
+
+         <div class="card" >
+            <img src="img/image 1.png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                 <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 20 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card" >
+            <img src="img/image 1.png" 
+                 class="card-img-top" alt="Эконом класс">
+            <div class="card-body text-center">
+                 <a href="/" class="card-title fw-bold">Эконом класс</a>
+                <p class="card-text text-muted">
+                    от 25 руб/за км
+                </p>
+                <a href="#" class="btn btn_tarife_card" 
+                   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Оставить заявку
+                </a>
+            </div>
+        </div>
+
+
+       
+ </div>
+
+
+
+
+
+    
+</div>
+
+    </div>
+</section>
+
+
+ <section class="section">
+        <div class="container sity_cont">
+            <h2>Рассчитать стоимость</h2>
+
+
+ <div class="container сont_form" style="width: 700px;margin:0 auto;" id="calculate">
+        <div class="input_wrapper">
+            <div class="input-group">
+                <input type="text" id="cityFrom" class="form-control" placeholder="Выберите пункт отправления" value="Тольятти" />
+            </div>
+            <div class="input-group">
+                <input type="text" id="cityTo" class="form-control" placeholder="Выберите пункт прибытия" />
+            </div>
+        </div>
+        <div class="input-group">
+            <select id="tariff" class="form-select">
+                <option value="17" />Эконом класс (от 17 ₽/км)
+                <option value="20" />Универсал
+(от 20 ₽/км)
+                <option value="20" />Комфорт класс (от 20 ₽/км)
+                <option value="25" />Бизнес класс (от 25 ₽/км)
+
+<option value="35" />VIP - класс (
+от 35 ₽/км)      
+
+<option value="35" />Минивэн
+от 35 ₽/км            
+
+</select>
+        </div>
+        <div class="input-group">
+            <button class="btn_dop" id="toggleServicesButton" onclick="toggleServices()">Выбрать дополнительные услуги</button>
+            <select id="services" class="form-select" style="display: none; border-radius: 7px;">
+                <option value="0" />Машина для некурящих (Бесплатно)
+                <option value="100" />Курящий салон (+100 ₽)
+                <option value="150" />Детское кресло, доступно только в классе комфорт (+150 ₽)
+                <option value="150" />Поездка с животным (+150 ₽)
+                <option value="0" />Такси с кондиционером (бесплатно)
+
+<option value="0" />Такси без рекламы (бесплатно)
+<option value="0" />Желтый автомобиль (бесплатно)
+
+<option value="150" />Такси с лыжами и сноубордом (+150 ₽)
+
+<option value="250" />Помощь водителя (+250 ₽)
+
+            </select>
+        </div>
+        <button class="btn_price_taxi" onclick="calculateCost()">Рассчитать стоимость</button>
+        <div class="result" id="result"></div>
+        <div id="map" style="width: 100%; height: 400px; margin-top: 20px; display: none;"></div>
+    </div>
+
+            
+        </div>
+    </section>
+
+
+
+<section class="section">
+    <div class="container">
+         <h2>Наши услуги</h2>
+
+
+
+         <div class="table-responsive">
+            <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 40%; font-size: 20px;">Название услуги</th>
+      <th scope="col" style="width: 20%; font-size: 20px;">Стоимость</th>
+      <th scope="col" style="font-size: 20px;">Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Машина для некурящих</td>
+      <td>Бесплатно</td>
+      <td>У нас есть водители специально для некурящих пассажиров.</td>
+    </tr>
+    <tr>
+      <td>Курящий салон</td>
+      <td>100 руб</td>
+      <td>Если вы курите, мы отправим вам машину с салоном для курящих.</td>
+    </tr>
+    <tr>
+     <td>Детское кресло (доступно только в классе Комфорт)</td>
+      <td>150 руб</td>
+      <td>Если вы путешествуете с детьми, вам понадобится специальное детское кресло.</td>
+    </tr>
+  </tbody>
+</table>
+
+         </div>
+         
+    </div>
+</section>
+    <section class="section">
+        <div class="container sity_cont">
+            <h2>Популярные маршруты</h2>
+            
+           <div class="sity_cont_wrapper">
+            <div class="name_oblast">Самарская область</div>
+             
+
+            <div class="sity-container">
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+            </div>
+           </div>
+
+
+
+           <div class="sity_cont_wrapper">
+            <div class="name_oblast">Самарская область</div>
+             
+
+            <div class="sity-container">
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+            </div>
+           </div>
+
+
+           <div class="sity_cont_wrapper">
+            <div class="name_oblast">Самарская область</div>
+             
+
+            <div class="sity-container">
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+                <a href="">Самара-Тольятти</a>
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+    <div class="section_bg_form_cont">
+        <div class="container">
+           <div class="title_contact_form">Свяжитесь с нами</div>
+         <div class="subtitle_contact_form">Наш специалист свяжется с вами в ближайшее время для консультации.<br> Мы готовы ответить на все ваши вопросы.</div>
+
+         <button class="btn btn_order btn_hero" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать такси прямо сейчас</button>
+        </div>
+    </div>
+
+
+
+
+
+<!-- Футер -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="cont_footer">
+            <!-- Логотип и описание -->
+            <div class="mb-4" style="width: 200px;">
+                <a href="/" class="d-block mb-3">
+                    <svg fill="#ff7b00" height="60px" id="Layer_1" style="enable-background:new 0 0 122.88 114.93" version="1.1" viewBox="0 -3.97 122.88 122.88" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+                        <g>
+                            <path class="st0" d="M117.95,53.71v41.82v9.94v9.46h-14.31v-9.46h-84.4v9.46H4.93v-9.46v-9.94V53.71H0v-9.41h12.04l6.71-20.88 c1.98-6.15,5.28-11.74,11.74-11.74h14.78V3.4c0-3.71-0.77-3.39,2.72-3.39h27.33c2.92,0,2.29-0.28,2.29,2.83v8.83h17.28 c6.46,0,10.18,5.48,11.74,11.74l5.19,20.88h11.06v9.41H117.95L117.95,53.71z M40.01,86.58h42.27v9.97H40.01V86.58L40.01,86.58z M9.72,63.36c10.77,0.34,17.36,4.86,19.05,14.26H9.72V63.36L9.72,63.36z M111.8,63.36c-10.77,0.34-17.36,4.86-19.05,14.26h19.05 V63.36L111.8,63.36z M17.18,44.29h88.52l-3.79-17.51c-1.04-4.8-4.03-8.95-8.95-8.95H31.74c-4.92,0-7.44,4.26-8.95,8.95L17.18,44.29 L17.18,44.29z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <p class="text-light" style="color: #d5d5d5 !important;">Такси Тольятти — быстрые и комфортные поездки по городу и области. Работаем 24/7.</p>
+            </div>
+
+            <!-- Контакты -->
+            <div class="mb-6">
+                <h5 class="footer-title">Контакты</h5>
+                <div class="contact-item">
+                   
+                    <div>+7 (986) 953-19-09</div>
+                </div>
+                <div class="contact-item">
+                    
+                    <div>+7 (986) 953-19-09</div>
+                </div>
+            </div>
+
+            <!-- Социальные сети и приложения -->
+            <div class="">
+                <h5 class="footer-title">Мы в соцсетях</h5>
+                <div class="d-flex" style="gap: 15px">
+                <a href="#" class="social-icon">
+                    <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.4395" cy="19.4395" fill="#3E99D8" r="19.4395"></circle>
+                        <path d="M3.56917 -2.55497e-07L0 6.42978L7.5349 1.87535L3.56917 -2.55497e-07Z" fill="#E0E0E0" transform="translate(13.9704 24.6145)"></path>
+                        <path d="M20.8862 0.133954C20.754 0 20.4897 0 20.2253 0L0.396574 8.03723C0.132191 8.17118 0 8.43909 0 8.707C0 8.97491 0.132191 9.24282 0.396574 9.37677L17.5814 17.414C17.7136 17.414 17.7136 17.414 17.8458 17.414C17.978 17.414 18.1102 17.414 18.1102 17.28C18.2424 17.1461 18.3746 17.0121 18.5068 16.7442L21.1506 0.669769C21.1506 0.535815 21.1506 0.267908 20.8862 0.133954Z" fill="white" transform="translate(7.36069 10.9512)"></path>
+                        <path d="M13.8801 0L0 11.52V19.4233L3.70136 13.2614L13.8801 0Z" fill="#F2F2F2" transform="translate(13.9704 11.6208)"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg fill="none" height="40" viewBox="0 0 39 39" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.4395" cy="19.4395" fill="#49E670" r="19.4395"></circle>
+                        <path d="M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z" fill="#FAFAFA" transform="translate(12.9597 12.9597)"></path>
+                        <path d="M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z" fill="white" stroke="white" stroke-width="0.2" transform="translate(7.7758 7.77582)"></path>
+                    </svg>
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <!-- Copyright -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-2">
+            <div class="copyright mb-2 mb-md-0">
+                © 2025 Такси Тольятти. Все права защищены.
+            </div>
+            <div>
+                <a href="#" class="policy-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+
+    <div class="title_form-modal">Свяжитесь с нами</div>
+
+    <form id="taxiForm">
+        
+        <div class="flex_cont_input">
+            
+            <div class="input-group" style="margin-top:10px;">
+            <input type="text" id="name" placeholder="Ваше ФИО" class="form-control" required />
+        </div>
+        <div class="input-group">
+            <input type="tel" id="phone" placeholder="Номер телефона" class="form-control" required />
+            
+        </div>
+            
+        </div>
+        
+        <div class="flex_cont_input">
+        
+            <div class="input-group">
+                <input type="text" id="from" placeholder="Пункт отправления" class="form-control" required />
+
+            </div>
+            <div class="input-group">
+                <input type="text" id="to" placeholder="Пункт прибытия" class="form-control" required />
+            
+            </div>
+        
+        </div>
+
+
+        <div class="flex_cont_input">
+           <div class="input-group">
+            <input type="datetime-local" id="datetime" class="form-control" required />
+            
+        </div>
+        <div class="input-group">
+            <select id="tariff"  class="form-select" required>
+                <option value="" disabled selected />Выберите тариф
+                <option value="20" />Эконом класс (20 ₽/км)
+                <option value="22" />Стандарт класс (22 ₽/км)
+               
+                <option value="25" />Комфорт (25 ₽/км)
+                <option value="28" />Комфорт Plus (28 ₽/км)
+                <option value="40" />Бизнес класс (40 ₽/км)
+                
+                 <option value="45" />Минивэн класс (45 ₽/км)
+            </select>
+        </div>
+        </div>
+       
+        <div class="input-group">
+            <textarea id="notes" rows="5"  style="resize: none;" placeholder="Дополнительные пожелания" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn_price_taxi">Отправить заявку</button>
+
+        <div class="form-check"> <input type="checkbox" class="form-check-input" id="flexCheckDefault" required=""> <label class="form-check-label" for="callback-policy"> Даю согласие на обработку персональных данных  согласно<br> <a href="https://xn----7sbabxukdmwuiegm.xn--p1ai/wp-content/uploads/2025/07/politika-v-otnoshenii-obrabotki-personalnyh-dannyh.pdf" class="hover-primary">политике конфиденциальности.</a> </label> </div>
+    </form>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d3b3d20b-6c57-4626-b184-69cda98f0559&suggest_apikey=0d3aa57b-7df0-49af-a363-3a7b72745602&lang=ru_RU"
+    type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+            $(document).ready(function() {
+        // Инициализация маски для телефона
+        $('#phone').inputmask('+79999999999');
+        
+        // Валидация формы при отправке
+        $('#taxiForm').on('submit', async function(event) {
+            event.preventDefault();
+            
+            // Проверка валидности формы
+            let isValid = true;
+            const form = this;
+            
+            // Проверяем все обязательные поля
+            $(form).find('input[required], select[required]').each(function() {
+                const field = $(this);
+                const errorElement = $(`#${field.attr('id')}-error`);
+                
+                if (!field.val() || (field.attr('id') === 'phone' && field.val().includes('_'))) {
+                    field.addClass('error');
+                    errorElement.show();
+                    isValid = false;
+                } else {
+                    field.removeClass('error');
+                    errorElement.hide();
+                }
+            });
+            
+            if (!isValid) {
+                return;
+            }
+            
+            const submitBtn = $(this).find('.btn_price_taxi');
+            submitBtn.prop('disabled', true);
+            submitBtn.text('Отправка...');
+            
+            try {
+                const name = $('#name').val();
+                const phone = $('#phone').val();
+                const from = $('#from').val();
+                const to = $('#to').val();
+                const datetime = $('#datetime').val();
+                const tariff = $('#tariff').val();
+                const notes = $('#notes').val();
+                
+                // Рассчитываем расстояние
+                const distance = await calculateDistance(from, to);
+                const pricePerKm = parseFloat(tariff);
+                const totalPrice = Math.round(distance * pricePerKm);
+                
+                // Форматируем дату и время для вывода
+                const dateObj = new Date(datetime);
+                const formattedDate = dateObj.toLocaleDateString('ru-RU', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric'
+                });
+                const formattedTime = dateObj.toLocaleTimeString('ru-RU', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                
+                // Отправляем в Telegram
+                await sendToTelegram({
+                    name, 
+                    phone, 
+                    from, 
+                    to, 
+                    distance, 
+                    tariff: $('#tariff option:selected').text(),
+                    totalPrice,
+                    notes,
+                    date: formattedDate,
+                    time: formattedTime
+                });
+                
+                alert('Заказ успешно отправлен!\nМы свяжемся с вами в ближайшее время.');
+                form.reset();
+            } catch (error) {
+                console.error('Ошибка:', error);
+                alert('Ошибка: ' + error.message);
+            } finally {
+                submitBtn.prop('disabled', false);
+                submitBtn.text('Отправить заявку');
+            }
+        });
+        
+        // Убираем ошибку при начале ввода
+        $('input, select').on('input change', function() {
+            const field = $(this);
+            if (field.val()) {
+                field.removeClass('error');
+                $(`#${field.attr('id')}-error`).hide();
+            }
+        });
+    });
+
+    // Функция расчета расстояния
+    function calculateDistance(from, to) {
+        return new Promise((resolve, reject) => {
+            if (!from || !to) {
+                reject(new Error('Укажите пункты отправления и прибытия'));
+                return;
+            }
+            
+            ymaps.route([from, to], {
+                mapStateAutoApply: false
+            }).then(function(route) {
+                const distance = route.getLength() / 1000; // в километрах
+                resolve(distance);
+            }).catch(function(error) {
+                reject(new Error('Не удалось рассчитать маршрут. Проверьте названия населенных пунктов.'));
+            });
+        });
+    }
+
+    // Функция отправки в Telegram с красивым форматированием
+    async function sendToTelegram(data) {
+        const botToken = '7501286936:AAGQTVWdnXuR7Bkc6IESp5x9ahc1J0wJ3Ec';
+        const chatId = '-4651739702';
+        
+        // Красивое форматирование с HTML
+        const text = `
+<b>🚕 НОВЫЙ ЗАКАЗ ТАКСИ (Новый сайт Тольятти)</b>
+
+<b>👤 КЛИЕНТ</b>
+<b>ФИО:</b> ${escapeHtml(data.name)}
+<b>Телефон:</b> <code>${escapeHtml(data.phone)}</code>
+
+<b>📍 Маршрут:</b>
+${escapeHtml(data.from)} → ${escapeHtml(data.to)}
+<b>Расстояние:</b> ${data.distance.toFixed(1)} км
+
+<b>📅 Дата и время:</b>
+${escapeHtml(data.date)} в ${escapeHtml(data.time)}
+
+<b>💰 Тариф:</b> ${escapeHtml(data.tariff)}
+<b>💵 Стоимость:</b> <b>${data.totalPrice} руб.</b>
+
+<b>📝 Примечания:</b>
+${data.notes ? escapeHtml(data.notes) : 'нет'}
+        `.trim();
+        
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+        
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: text,
+                parse_mode: 'HTML',
+                disable_web_page_preview: true
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (!result.ok) {
+            throw new Error('Ошибка отправки заказа');
+        }
+    }
+
+    // Функция для экранирования HTML-символов
+    function escapeHtml(text) {
+        if (!text) return '';
+        return text.toString()
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
+
+        let myMap;
+
+        function toggleServices() {
+            const servicesSelect = document.getElementById('services');
+            const toggleButton = document.getElementById('toggleServicesButton');
+
+            if (servicesSelect.style.display === 'none') {
+                servicesSelect.style.display = 'block';
+                toggleButton.textContent = ''; // Скрыть текст кнопки
+            } else {
+                servicesSelect.style.display = 'none';
+                toggleButton.textContent = 'Выбрать дополнительные услуги'; // Вернуть текст
+            }
+        }
+
+        function calculateCost() {
+            var cityFrom = document.getElementById('cityFrom').value.trim();
+            var cityTo = document.getElementById('cityTo').value.trim();
+            var tariff = parseFloat(document.getElementById('tariff').value);
+            var selectedServices = Array.from(document.getElementById('services').selectedOptions).map(option => parseFloat(option.value));
+
+            if (!cityFrom || !cityTo) {
+                alert("Пожалуйста, заполните все поля.");
+                return;
+            }
+
+            ymaps.ready(function () {
+                var geocoderFrom = ymaps.geocode(cityFrom);
+                var geocoderTo = ymaps.geocode(cityTo);
+
+                Promise.all([geocoderFrom, geocoderTo]).then(function (res) {
+                    if (res[0].geoObjects.getLength() === 0 || res[1].geoObjects.getLength() === 0) {
+                        alert('Не удалось найти указанные города. Проверьте правильность ввода.');
+                        return;
+                    }
+
+                    var coordsFrom = res[0].geoObjects.get(0).geometry.getCoordinates();
+                    var coordsTo = res[1].geoObjects.get(0).geometry.getCoordinates();
+
+                    ymaps.route([coordsFrom, coordsTo]).then(function (route) {
+                        if (!route) {
+                            alert('Не удалось построить маршрут между указанными точками.');
+                            return;
+                        }
+
+                        var distance = route.getLength() / 1000;
+                        var baseCost = distance * tariff;
+
+                        var servicesCost = selectedServices.reduce((sum, cost) => sum + cost, 0);
+
+                        var totalCost = baseCost + servicesCost;
+
+                        document.getElementById('result').innerText = `Стоимость поездки: ${totalCost.toFixed(2)} руб (Расстояние: ${distance.toFixed(2)} км)`;
+
+                        document.getElementById('map').style.display = 'block';
+
+                        if (myMap) {
+                            myMap.destroy();
+                        }
+
+                        myMap = new ymaps.Map("map", {
+                            center: coordsFrom,
+                            zoom: 10
+                        });
+
+                        myMap.geoObjects.add(route.getPaths());
+                    }).catch(function (error) {
+                        alert('Ошибка при построении маршрута: ' + error.message);
+                    });
+                }).catch(function (error) {
+                    alert('Ошибка при геокодировании: ' + error.message);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
